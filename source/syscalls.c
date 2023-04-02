@@ -85,20 +85,6 @@ __attribute__((weak)) int _write(int file, char *ptr, int len)
 	return len;
 }
 
-/*
-int _write( int handle, char* data, int size ) {
-  int count = size;
-  uint32_t *pUSART1_SR = (uint32_t*) 0x40013800;
-  uint32_t *pUSART1_DR = (uint32_t*) 0x40013804;
-
-  while( count-- ) {
-  	//while( !( *pUSART1_SR & (1 << 7) ) ) {}; //TXE: Transmit data register empty
-    //*pUSART1_DR = *data++;
-  }
-  return size;
-}
-*/
-
 int _close(int file)
 {
 	return -1;
