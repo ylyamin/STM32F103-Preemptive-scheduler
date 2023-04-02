@@ -1,0 +1,23 @@
+{
+    "files.associations": {
+        "cstdint": "c",
+        "stdint.h": "c",
+        "stdint-gcc.h": "c",
+        "stdio.h": "c",
+        "errno.h": "c",
+        "cstdio": "c",
+        "cli.h": "c",
+        "embedded_cli.h": "c",
+        "*.tcc": "c",
+        "chrono": "c",
+        "ctime": "c",
+        "limits": "c",
+        "numeric": "c",
+        "ratio": "c",
+        "streambuf": "c",
+        "tuple": "c",
+        "type_traits": "c",
+        "utility": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
