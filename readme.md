@@ -1,4 +1,5 @@
 # STM32F103 Preemptive scheduler
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/ylyamin/STM32F103-Preemptive-scheduler?color=green)
 
 ## Overview
 This a project with Simple Task Scheduler based an STM32F103 board with ARM® Cortex®-M3 MCU. \
@@ -18,6 +19,7 @@ https://www.udemy.com/course/embedded-system-programming-on-arm-cortex-m3m4/
 * Compiler: GNU ARM GCC  - https://github.com/xpack-dev-tools/arm-none-eabi-gcc-xpack/releases/tag/v11.2.1-1.2/
 * Build automation: GNU Make - https://gnuwin32.sourceforge.net/packages/make.htm
 * Interfaces with JTAG debugger: OpenOCD - https://github.com/openocd-org/openocd/releases/tag/v0.11.0
+* Terminal emulator: Terra Term - https://ttssh2.osdn.jp/index.html.en 
 
 ### Hardware:
 * Blue Pill [STM32F103C8T6](https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill.html) board (Arm® 32-bit Cortex®-M3 CPU core 72MHz, 64Kb Flash, 20Kb SRAM)
