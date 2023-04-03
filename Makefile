@@ -9,7 +9,6 @@ CFLAGS += -g
 CFLAGS += -mcpu=$(MACH)
 CFLAGS += -mthumb 
 #CFLAGS += -nostdlib
-#CFLAGS += --specs=nosys.specs
 #CFLAGS += -ffreestanding 
 
 # Linker directives.
@@ -17,9 +16,9 @@ LDFLAGS += -g
 LDFLAGS += -mcpu=$(MACH)
 LDFLAGS += -mthumb
 LDFLAGS += -nostartfiles 
+LDFLAGS += --specs=nano.specs #newlib-nano
 #LDFLAGS += -nodefaultlibs 
 #LDFLAGS += -nostdlib
-#LDFLAGS += --specs=nosys.specs
 LDFLAGS += -T source/STM32F103C8TX_FLASH.ld #stm32_ls.ld 
 LDFLAGS += -Wl,-Map=debug/final.map 
 LDFLAGS += -Wl,--print-memory-usage 
@@ -37,7 +36,7 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 
 final.elf: $(OBJ_FILES)
 	$(CC) $(LDFLAGS) -o $(OBJ_DIR)/$@ $^
-	$(DUMP) -D $(OBJ_DIR)/final.elf > $(OBJ_DIR)/final.as
+	$(DUMP) -D $(OBJ_DIR)/final.elf > $(OBJ_DIR)/final.asm
 
 clean:
-	del debug\*.o debug\*.elf debug\*.as debug\*.map
+	del debug\*.o debug\*.elf debug\*.asm debug\*.map
