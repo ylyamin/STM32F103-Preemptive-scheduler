@@ -1,4 +1,5 @@
 # STM32F103 Preemptive scheduler
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/ylyamin/STM32F103-Preemptive-scheduler?color=green)
 
 ## Overview
 This a project with Simple Task Scheduler based an STM32F103 board with ARM® Cortex®-M3 MCU. \
