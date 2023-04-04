@@ -10,7 +10,7 @@ int main(void)
 	init_uart();
 	init_IRQ();
 	init_cli();
-	printf("\r\n -- Start -- \r\n");
+	printf("\r\n-- Start --\r\n");
 	init_scheduler_stack(SHED_STACK_START);
 	init_task_stack();
 	init_clock();

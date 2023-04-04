@@ -86,7 +86,7 @@ void init_cli(void){
         embeddedCliAddBinding(cli,comm[i]);
     }
 
-    printf("\r\nCli initilized\r\n");
+    printf("\r\n-- Cli initilized --\r\n");
 
 }
 
