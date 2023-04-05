@@ -55,8 +55,7 @@ make all;
 
 ## TODO:
 - [ ] Re-structure project according C guidelines and best practice
-- [ ] Embeedded CLI depends of malloc() from libc figure out how to replace this
-- [ ] printf() depends of syscalls.c figure out how how to replace this
-- [ ] Led seems configured not fully properly
-- [ ] Figure out how to use BOOT jumper
+- [ ] Embedded CLI depends of malloc() from libc, maybe rewrite this to own implementation
 - [ ] Embedded cli library - do it as git submodule
+- [ ] printf() depends of libc, maybe rewrite this to own implementation
+- [ ] Led seems configured not fully properly
